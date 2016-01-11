@@ -1,0 +1,31 @@
+{
+  "name": "ddeyes",
+  "version": "0.0.0",
+  "description": "a simple wrapper for eyes inspector as default config.",
+  "author": ":FooTearth <footearth@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/ddeyes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/ddeyes/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/ddeyes",
+  "keywords": [
+    "dd",
+    "eyes",
+    "inspector"
+  ],
+  "scripts": {
+    "test": ""
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "eyes": "*",
+    "shelljs": "*"
+  }
+}
