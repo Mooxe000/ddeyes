@@ -1,6 +1,6 @@
 {
   "name": "ddeyes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a simple wrapper for eyes inspector as default config.",
   "author": ":FooTearth <footearth@gmail.com>",
   "main": "index.js",
@@ -22,10 +22,10 @@
     "test": ""
   },
   "dependencies": {
+    "coffee-script": "*",
+    "eyes": "*"
   },
   "devDependencies": {
-    "coffee-script": "*",
-    "eyes": "*",
     "shelljs": "*"
   }
 }
