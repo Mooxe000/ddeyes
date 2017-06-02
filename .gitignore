@@ -11,5 +11,4 @@ trash
 /**/dist
 /**/build
 
-example/init/*
-!example/init/index.coffee
+yarn.lock

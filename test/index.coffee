@@ -2,7 +2,7 @@
 
 echo = console.log
 require 'shelljs/make'
-dd = require './index.js'
+dd = require '../dest/index.js'
 
 target.all = ->
   a =

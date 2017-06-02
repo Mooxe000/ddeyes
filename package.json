@@ -19,13 +19,16 @@
     "inspector"
   ],
   "scripts": {
-    "test": ""
+    "clean": "make clean",
+    "build": "make build",
+    "test": "make test"
   },
-  "dependencies": {
-    "coffee-script": "*",
-    "eyes": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "shelljs": "*"
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "coffeescript": "next",
+    "eyes": "^0.1.8",
+    "shelljs": "^0.7.7"
   }
 }
