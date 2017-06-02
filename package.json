@@ -1,6 +1,6 @@
 {
   "name": "ddeyes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple wrapper for eyes inspector as default config.",
   "author": ":FooTearth <footearth@gmail.com>",
   "main": "index.js",
