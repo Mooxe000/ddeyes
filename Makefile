@@ -12,7 +12,7 @@ docker:
 
 build:
 	mkdir -p dest
-	coffee -p src/index.coffee | babel --presets env > dest/index.js
+	coffee -pb src/index.coffee | babel --presets env > dest/index.js
 
 clean:
 	rm -rf ./dest

@@ -1,17 +1,15 @@
 'use strict';
 
-(function () {
-  var eyes, inspect;
+var eyes, inspect;
 
-  eyes = require('eyes');
+eyes = require('eyes');
 
-  inspect = eyes.inspector({
-    pretty: true,
-    hideFunctions: true,
-    stream: process.stdout,
-    maxLength: 204800
-  });
+inspect = eyes.inspector({
+  pretty: true,
+  hideFunctions: true,
+  stream: process.stdout,
+  maxLength: 204800
+});
 
-  module.exports = inspect;
-}).call(undefined);
+module.exports = inspect;
 
