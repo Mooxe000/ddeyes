@@ -6,15 +6,13 @@ docker:
 		--rm \
 		-ti \
 		-v $$(pwd):/root/${pjName} \
-		-p 3000:3000 \
 		mooxe/node \
 		/bin/bash
 
 build:
-	mkdir -p dest
-	coffee -pb src/index.coffee > dest/index.js
-
-# coffee -pb src/index.coffee | babel --presets env > dest/index.js
+	mkdir -p ./dest
+	coffee -pbc src/index.coffee > ./dest/index.es6
+	cat ./dest/index.es6 | babel --presets env > ./dest/index.js
 
 clean:
 	rm -rf ./dest

@@ -1,11 +1,7 @@
 #!/usr/bin/env coffee
 
-require 'babel-core/register'
-
 require 'shelljs/make'
-dd = (
-  require '../index.js'
-).default
+dd = require '../index.js'
 
 echo = console.log
 
