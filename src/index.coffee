@@ -1,4 +1,4 @@
-eyes = require 'eyes'
+import * as eyes from 'eyes'
 
 inspect = eyes.inspector
   pretty: true
@@ -6,4 +6,4 @@ inspect = eyes.inspector
   stream: process.stdout
   maxLength: 204800
 
-module.exports = inspect
+export default inspect

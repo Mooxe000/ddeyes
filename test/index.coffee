@@ -1,8 +1,13 @@
 #!/usr/bin/env coffee
 
-echo = console.log
+require 'babel-core/register'
+
 require 'shelljs/make'
-dd = require '../dest/index.js'
+dd = (
+  require '../index.js'
+).default
+
+echo = console.log
 
 target.all = ->
   a =

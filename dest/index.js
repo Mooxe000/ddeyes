@@ -1,8 +1,6 @@
-'use strict';
+var inspect;
 
-var eyes, inspect;
-
-eyes = require('eyes');
+import * as eyes from 'eyes';
 
 inspect = eyes.inspector({
   pretty: true,
@@ -11,5 +9,4 @@ inspect = eyes.inspector({
   maxLength: 204800
 });
 
-module.exports = inspect;
-
+export default inspect;
