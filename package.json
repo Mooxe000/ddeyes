@@ -1,9 +1,9 @@
 {
   "name": "ddeyes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a simple wrapper for eyes inspector as default config.",
   "author": ":FooTearth <footearth@gmail.com>",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,17 +19,20 @@
     "inspector"
   ],
   "scripts": {
-    "clean": "make clean",
-    "build": "make build",
-    "test": "make test"
+    "clean": "rm -rf ./dist",
+    "build": "rollup -c",
+    "rebuild": "npm run clean; npm run build",
+    "dev": "rollup -c -w",
+    "postinstall": "npm run build"
   },
   "dependencies": {
-    "eyes": "^0.1.8"
+    "cfx.rollup-plugin-coffee2": "^0.1.4",
+    "eyes": "^0.1.8",
+    "rollup": "^0.52.3",
+    "rollup-plugin-cleanup": "^2.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "coffeescript": "next",
-    "shelljs": "^0.7.7"
+    "coffeescript": "^2.1.0",
+    "shelljs": "^0.7.8"
   }
 }

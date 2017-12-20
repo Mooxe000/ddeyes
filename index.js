@@ -1,1 +1,2 @@
-module.exports = require('./dest/index.js').default;
+import dd from './src/index.coffee';
+export default dd;

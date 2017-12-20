@@ -1,9 +1,7 @@
-import * as eyes from 'eyes'
+import { inspector } from 'eyes'
 
-inspect = eyes.inspector
+export default inspector
   pretty: true
   hideFunctions: true
   stream: process.stdout
   maxLength: 204800
-
-export default inspect
