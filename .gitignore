@@ -11,4 +11,4 @@ trash
 /**/dist
 /**/build
 
-yarn.lock
+yarn*
