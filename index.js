@@ -1,2 +1,3 @@
-import dd from './src/index.coffee';
+import dd, { ddbs } from './src/index.coffee';
+export { ddbs };
 export default dd;
